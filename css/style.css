@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+.hero {
+    padding: 100px 0;
+}
+.random-bg , .contact {
+    background-color: #8fc9d233; /* Change this color to your preferred random color */
+}
+.about-img { 
+    padding-top:25px;
+}
+.about-me-wrap { 
+    padding-top:25px;
+}
+.project-card {
+    border: 2px solid #8fc9d233; /* Set your desired border color here */
+}
+.project-card:hover {
+    box-shadow: 0px 0px 15px 5px rgba(2,2,2,0.35) !important;
+    /* Adjust the shadow values as needed (e.g., blur, spread, and color) */
+}
+.bold {
+    font-weight: bold;
+}
+
+/* Apply flexbox to the skills container */
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+    justify-content: center; /* Center the items horizontally */
+}
+
+/* Add margin to the spans for spacing */
+.skills .h4 {
+    margin: 0.5rem;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    /* Adjust margin for smaller screens */
+    .skills .h4 {
+        margin: 0.25rem;
+    }
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #3498db;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+.bg-headerFooter { background: #0b0351; }
+.text-color-light { color:#fff; }
+.bg-banner { background: #020847; }

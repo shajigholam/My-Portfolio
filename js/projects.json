@@ -1,0 +1,30 @@
+[
+    {
+        "Project Name": "Real Estate Agent Website",
+        "Description": "A website for a real estate agent with using thumbnail to show a breif description of each property. Includes contact form with validation and a confirmation alert.",
+        "Technologies Used": "JS, HTML and CSS",
+        "gitlink": "https://github.com/shajigholam/Real-Estate-Agent-Website",
+        "livedemolink": "https://real-estate-04a87c.netlify.app/"
+    },
+    {
+        "Project Name": "My Portfolio",
+        "Description": "My very own portfolio website which contains my projects and contact information.",
+        "Technologies Used": "Js, HTML, CSS, Bootstrap, JQuery",
+        "gitlink": "https://github.com/project2",
+        "livedemolink": "https://project2demo.com"
+    },
+    {
+        "Project Name": "Library Application",
+        "Description": "This project receives the publications and stores them into the system with the information needed for their retrieval.",
+        "Technologies Used": "C++",
+        "gitlink": "https://github.com/shajigholam/Library-Application",
+        "livedemolink": "https://project21demo.com"
+    },
+    {
+        "Project Name": "Clinic Appointment",
+        "Description": "This project allows users to manage patient records and appointments through a text-based menu interface.",
+        "Technologies Used": "C",
+        "gitlink": "https://github.com/shajigholam/Clinic-Appointment",
+        "livedemolink": "https://project22demo.com"
+    }
+]
