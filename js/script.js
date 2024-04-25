@@ -1,14 +1,6 @@
 $(document).ready(function() {
-    // Hide content initially
-    $('#content').hide();
 
-    // Show content after 3 seconds
-    setTimeout(function() {
-        $('#loading-overlay').fadeOut('slow', function() {
-            // Animation complete, show the content
-            $('#content').fadeIn('slow');
-        });
-    }, 3000);
+    $('#content').fadeIn('slow');
 
     var spanContainer = $(".skills");
     var spanItems = spanContainer.children("span");
@@ -47,13 +39,16 @@ $(document).ready(function() {
         function generateProjectCard(data) {
             var card = `
                 <div class="col-md-4">
-                    <div class="card project-card shadow mb-1">
+                    <div class="card shadow mb-3">
+                        <h3 class="card-header bold">${data["Project Name"]}</h3>
                         <div class="card-body">
-                            <h3 class="card-title">${data["Project Name"]}</h3>
-                            <p class="card-text">Description: ${data["Description"]}</p>
-                            <p class="card-text">Technologies Used: ${data["Technologies Used"]}</p>
-                            <a href="${data.gitlink}" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a><br/>
-                            <a href="${data.livedemolink}" class=""><i class="fas fa-link"></i> Live Demo</a>
+                        <img class="d-block user-select-none" width="100%" height="100%" src=${data["image"]} alt=""><br>
+                            <h5 class="card-title">Description: </h5>
+                            <p class="card-text"> ${data["Description"]}</p>
+                            <h5 class="card-title">Technologies Used: </h5>
+                            <p class="card-text">${data["Technologies Used"]}</p>
+                            <a href="${data.gitlink}" target="_blank class="card-link github-link"><i class="fab fa-github"></i> GitHub Repository</a><br/>
+                            ${data.livedemolink ? `<a href="${data.livedemolink}" target="_blank class="card-link"><i class="fas fa-link"></i> Live Demo</a>` : ''}
                         </div>
                     </div>
                 </div>
@@ -77,4 +72,12 @@ $(document).ready(function() {
         // Open the email link in a pop-up window
         window.open(mailtoLink, 'EmailPopup', 'width=' + popupWidth + ',height=' + popupHeight);
     });
+});
+// Configuring typing animation
+var typed = new Typed(".auto-type", {
+    strings: ['Software Developer.', 'Web Developer.', 'Computer Science Enthusiast.'],
+    typeSpeed: 40,
+    backSpeed: 50,
+    loop: true,
+    showCursor: false
 });

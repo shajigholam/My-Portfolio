@@ -3,26 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Header</title>
-    <!-- Include Bootstrap CSS -->
+    <title>Samaneh Hajigholam | Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
 <body>
-
-<div id="loading-overlay">
-    <div id="loading-container">
-        <div class="lds-ripple"><div></div><div></div></div>
-        <p class="h3">Hi there! <br/> <span class="h4">Welcome...</span></p>
-    </div>
-</div>
-
-<div id="content" style="display: none;">
-    <nav class="navbar navbar-expand-lg bg-headerFooter"> <!-- Change background color to light blue -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container">
-            <a class="text-color-light" href="#">Samaneh Hajigholam👩🏻‍💻</a>
+            <a class="navbar-brand" href="#">Samaneh.HG👩🏻‍💻</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,29 +31,34 @@
             </div>
         </div>
     </nav>
-
-    <section class="hero bg-banner text-color-light"> <!-- Use Bootstrap bg-light class for the hero section -->
-        <div class="container text-center">
-            <h1 class="bold">Computer Programming Student</h1>
-            <p>Welcome to My Portfolio.</p>
-        </div>
-    </section>
-    
-    <section id="about" class="about random-bg"> <!-- Use the custom CSS class for random background color -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <article class="about-img">
-                        <img width="300px" src="../assets/abt-img.png" alt="Third slide">
-                    </article>
-                </div>
-                <div class="col-md-6 my-auto">
-                    <div class="about-me-wrap">
-                        <h2 class="bold">About Me</h2><br>
-                        <p>I am a full-time student, studying computer programming. I am passionate about technology and coding. As a programming student, I enjoy learning new programming languages, exploring software development concepts, and building web applications. Programming allows me to be creative and solve problems using logic and code.</p>
-                        <p>Outside of programming, I have various hobbies and interests. I love exploring nature trails, as it helps me relax and clear my mind. I also enjoy reading books, and listening to music in my free time.</p>
+    <!-- hero section -->
+    <section class="bg-light text-center py-1">
+        <div class="container pb-5 pt-5">
+            <div class="pb-5 pt-5 row">
+                <div class="col-lg-9 col-xl-8 ms-auto me-auto pb-5 pt-5">
+                    <p class="lead mb-4">Welcome to My Portfolio!</p><br>
+                    <h1 class="display-3 fw-bold mb-3">I'm Samaneh Hajigholam</h1><br><br>
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="title-para">
+                                <span class="auto-type text-primary"></span><br />
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container pb-5 pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img width="300px" src="../assets/abt-img.png" alt="A girl behind a laptop">
+            </div>
+            <div class="col-md-6">
+                <h2 class="bold">About Me</h2><br>
+                <p>I graduated in Computer Programming & Analysis. I am passionate about technology and coding. I enjoy learning new programming languages, exploring software development concepts, and building web applications. Programming allows me to be creative and solve problems using logic and code.</p>
+                <p>Outside of programming, I have various hobbies and interests. I love exploring nature trails, as it helps me relax and clear my mind. I also enjoy reading books, and listening to music in my free time.</p>
             </div>
         </div>
     </section>
@@ -76,10 +71,10 @@
                         <div class="skills">
                             <span class="h4 ml-3 mr-3">C</span>
                             <span class="h4 ml-3 mr-3">C++</span>
+                            <span class="h4 ml-3 mr-3">C#</span>
                             <span class="h4 ml-3 mr-3">JavaScript</span>
-                            <span class="h4 ml-3 mr-3">CSS3</span>
-                            <span class="h4 ml-3 mr-3">HTML5</span>
-                            <span class="h4 ml-3 mr-3">GitHub</span>
+                            <span class="h4 ml-3 mr-3">React</span>
+                            <span class="h4 ml-3 mr-3">Mongo DB</span>
                             <span class="h4 ml-3 mr-3">Oracle 12C</span>
                             <span class="h4 ml-3 mr-3">Bootstrap</span>
                             <span class="h4 ml-3 mr-3">JQuery</span>
@@ -91,45 +86,46 @@
     </div>
     
     <!-- Projects section -->
-    <section id="projects" class="projects pb-4 bg-banner">
-        <div class="container pt-4">
-            <h2 class="text-color-light pb-3 pt-3 bold">Projects</h2>
+    <section id="projects" class="pb-5">
+        <div class="container pt-5 pb-5">
+            <h1 class=" pb-5 pt-3 bold">Projects</h1>
             <div class="row" id="project-container">
-                <!-- Dynamic project cards will be inserted here -->
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="mb-3 pt-3 bold">Contact</h2>
-            <div class="row">
-                <div class="col-md-6 ">
-                    <p><span>📧 </span> <a href="#" class="email-link bold">shajigholam@myseneca.ca</a></p>
-                    <p><span>🔗 </span><a href="https://www.linkedin.com/in/samaneh-h-9b35a5291/" class="bold">LinkedIn Profile</a></p>
-                    <p><span>👾 </span><a href="https://github.com/shajigholam" class="bold">GitHub Profile</a></p>
-                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-headerFooter text-white text-center py-4">
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/samaneh-h-9b35a5291/" target="_blank"
+            ><img
+            src="/assets/icons8-linkedin.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/shajigholam" target="_blank"
+            ><img src="/assets/icons8-github.gif" alt="Github" class="socicon"
+        /></a>
+    </div>
+
+    <!-- footer section -->
+    <footer class="blockquote-footer text-center py-4 bg-primary">
         <div class="container">
-            <h4>Samaneh Hajigholam</h4>
+            <h4>Made with <i class="bi bi-heart-fill"></i> by Samaneh</h4>
             <p><span>&copy; 2023</span></p>
             <div class="icons">
-                <a href="https://www.linkedin.com//" target="_blank"><i class="fab fa-linkedin text-white mr-3"></i></a>
-                <a href="https://github.com/" target="_blank"><i class="fab fa-github text-white"></i></a>
+                <a href="https://www.linkedin.com/in/samaneh-h-9b35a5291/" target="_blank"><i class="fab fa-linkedin text-white mr-3"></i></a>
+                <a href="https://github.com/shajigholam" target="_blank"><i class="fab fa-github text-white"></i></a>
             </div>
         </div>
     </footer>
 </div>
 
-<!-- Include Bootstrap JS (jQuery and Popper.js required) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <script src="../js/script.js"></script>
 </body>
 </html>
