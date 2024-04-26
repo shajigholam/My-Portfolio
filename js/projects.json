@@ -8,6 +8,13 @@
         "image": "../assets/lego-2310286_640.jpg"
     },
     {
+        "Project Name": "Workout Tracker",
+        "Description": "This is a full-stack MERN web application. Users can add/delete/create workouts to their own account. Using JWT to communicate the authentication status between the browser and the server. Also making hash passwords before saving them to the database ",
+        "Technologies Used": "React, Express, Node.js, MongoDB",
+        "gitlink": "https://github.com/shajigholam/Workout-Buddy-MERN/tree/main",
+        "image": "../assets/yoga.png"
+    },
+    {
         "Project Name": "Real Estate Agent Website",
         "Description": "A website for a real estate agent with using thumbnail to show a breif description of each property. Includes contact form with validation and a confirmation alert.",
         "Technologies Used": "JS, HTML and CSS",
