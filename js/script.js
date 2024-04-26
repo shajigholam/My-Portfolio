@@ -40,7 +40,7 @@ $(document).ready(function() {
             var card = `
                 <div class="col-md-4">
                     <div class="card shadow mb-3">
-                        <h3 class="card-header bold">${data["Project Name"]}</h3>
+                        <h3 class="card-header bold text-white bg-primary">${data["Project Name"]}</h3>
                         <div class="card-body">
                         <img class="d-block user-select-none" width="100%" height="100%" src=${data["image"]} alt=""><br>
                             <h5 class="card-title">Description: </h5>
@@ -62,16 +62,32 @@ $(document).ready(function() {
         }
     });
     
-    $('a.email-link').click(function(e) {
-        e.preventDefault(); // Prevent the default behavior of the link
-        var email = 'shajigholam@myseneca.ca';
-        var mailtoLink = 'mailto:' + email;
-        var popupWidth = 600;
-        var popupHeight = 400;
+    // Get the form data
+    var formData = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        message: $('#message').val()
+    };
+
+    // Construct the mailto link
+    var mailtoLink = 'mailto:samanehhajigholam@gmail.com' + 
+                     '?subject=' + encodeURIComponent('Message from ' + formData.name) +
+                     '&body=' + encodeURIComponent(formData.message);
+
+    e.preventDefault();
+    // Open the email link in a new window
+    window.open(mailtoLink, '_blank');
+
+    // $('#email-link').click(function(e) {
+    //     e.preventDefault(); // Prevent the default behavior of the link
+    //     var email = 'shajigholam@myseneca.ca';
+    //     var mailtoLink = 'mailto:' + email;
+    //     var popupWidth = 600;
+    //     var popupHeight = 400;
         
-        // Open the email link in a pop-up window
-        window.open(mailtoLink, 'EmailPopup', 'width=' + popupWidth + ',height=' + popupHeight);
-    });
+    //     // Open the email link in a pop-up window
+    //     window.open(mailtoLink, 'EmailPopup', 'width=' + popupWidth + ',height=' + popupHeight);
+    // });
 });
 // Configuring typing animation
 var typed = new Typed(".auto-type", {
