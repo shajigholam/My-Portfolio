@@ -56,7 +56,7 @@
                 <img width="300px" src="../assets/abt-img.png" alt="A girl behind a laptop">
             </div>
             <div class="col-md-6">
-                <h2 class="bold">About Me</h2><br>
+                <h1 class="bold">About Me</h1><br>
                 <p>I graduated in Computer Programming & Analysis. I am passionate about technology and coding. I enjoy learning new programming languages, exploring software development concepts, and building web applications. Programming allows me to be creative and solve problems using logic and code.</p>
                 <p>Outside of programming, I have various hobbies and interests. I love exploring nature trails, as it helps me relax and clear my mind. I also enjoy reading books, and listening to music in my free time.</p>
             </div>
@@ -94,6 +94,40 @@
         </div>
     </section>
 
+    <!-- Contact Me -->
+    <section class="bg-light pb-5 pt-5">
+        <div class="container" id="contact">
+            <div id="overlay">
+                <form id="contact-form" action="https://formsubmit.co/samanehhajigholam@gmail.com" method="POST">
+                    <!-- Form Submit Config -->
+                    <input type="hidden" name="_subject" value="New Message from Website">
+                    <input type="hidden" name="_next" value="https://samaneh-hg-f8dde7.netlify.app/success.html">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <h1>Contact Me</h1><br>
+                    <div class="row">
+                        <div class="pb-3">
+                            <label for="name">Name:</label>
+                            <input class="form-control name="Name" type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="pb-3">
+                            <label for="email">Email:</label>
+                            <input class="form-control name="email" type="text" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="pb-3">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="3"></textarea>
+                        </div>
+
+                        <div class="pb-3 pt-3 text-center">
+                            <input class="text-white bg-primary" type="submit" value="Send Message">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
         <a href="https://www.linkedin.com/in/samaneh-h-9b35a5291/" target="_blank"
@@ -113,9 +147,10 @@
         <div class="container">
             <h4>Made with <i class="bi bi-heart-fill"></i> by Samaneh</h4>
             <p><span>&copy; 2023</span></p>
-            <div class="icons">
+            <div style="font-size: 40px;">
                 <a href="https://www.linkedin.com/in/samaneh-h-9b35a5291/" target="_blank"><i class="fab fa-linkedin text-white mr-3"></i></a>
-                <a href="https://github.com/shajigholam" target="_blank"><i class="fab fa-github text-white"></i></a>
+                <a href="https://github.com/shajigholam" target="_blank"><i class="fab fa-github text-white mr-3"></i></a>
+                <a href="mailto:samanehhajigholam@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill text-white"></i></a>
             </div>
         </div>
     </footer>
