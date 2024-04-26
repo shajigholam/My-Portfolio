@@ -39,7 +39,7 @@ $(document).ready(function() {
         function generateProjectCard(data) {
             var card = `
                 <div class="col-md-4">
-                    <div class="card shadow mb-3">
+                    <div class=" p-2 shadow mb-5 h-100">
                         <h3 class="card-header bold text-white bg-primary">${data["Project Name"]}</h3>
                         <div class="card-body">
                         <img class="d-block user-select-none" width="100%" height="100%" src=${data["image"]} alt=""><br>
@@ -61,22 +61,6 @@ $(document).ready(function() {
             $("#project-container").append(generateProjectCard(data[i]));
         }
     });
-    
-    // Get the form data
-    var formData = {
-        name: $('#name').val(),
-        email: $('#email').val(),
-        message: $('#message').val()
-    };
-
-    // Construct the mailto link
-    var mailtoLink = 'mailto:samanehhajigholam@gmail.com' + 
-                     '?subject=' + encodeURIComponent('Message from ' + formData.name) +
-                     '&body=' + encodeURIComponent(formData.message);
-
-    e.preventDefault();
-    // Open the email link in a new window
-    window.open(mailtoLink, '_blank');
 
     // $('#email-link').click(function(e) {
     //     e.preventDefault(); // Prevent the default behavior of the link
