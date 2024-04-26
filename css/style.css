@@ -11436,10 +11436,3 @@ textarea.form-control-lg {
   right: 1%;
   bottom: 50%;
 }
-
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
