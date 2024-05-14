@@ -4,7 +4,7 @@
         "Description": "This project is a web application that allows users to browse and view a collection of Lego sets. Users can explore Lego sets by themes, view details of individual sets. User should have authorization to add/remove/edit from the collection by signup/login.",
         "Technologies Used": "JS, Tailwind, EJS, Express, Node.js, MongoDB",
         "gitlink": "https://github.com/shajigholam/Lego-Collection/tree/master",
-        "livedemolink": "https://brainy-shawl-crow.cyclic.app/",
+        "livedemolink": "https://lego-collection-iyaa.onrender.com/",
         "image": "../assets/lego-2310286_640.jpg"
     },
     {
