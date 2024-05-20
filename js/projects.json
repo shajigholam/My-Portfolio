@@ -1,7 +1,7 @@
 [
     {
         "Project Name": "Lego Collection",
-        "Description": "This project is a web application that allows users to browse and view a collection of Lego sets. Users can explore Lego sets by themes, view details of individual sets. User should have authorization to add/remove/edit from the collection by signup/login. \n**Note**: Loading time of the web app is around 2-3 min because of the free web service of Render",
+        "Description": "This project is a web application that allows users to browse and view a collection of Lego sets. Users can explore Lego sets by themes, view details of individual sets. User should have authorization to add/remove/edit from the collection by signup/login. <br><strong>Note</strong>: Loading time of the web app is around 2-3 min because of the free web service of Render",
         "Technologies Used": "JS, Tailwind, EJS, Express, Node.js, MongoDB",
         "gitlink": "https://github.com/shajigholam/Lego-Collection/tree/master",
         "livedemolink": "https://lego-collection-iyaa.onrender.com/",
