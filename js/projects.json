@@ -1,8 +1,8 @@
 [
     {
         "Project Name": "Lego Collection",
-        "Description": "This project is a web application that allows users to browse and view a collection of Lego sets. Users can explore Lego sets by themes, view details of individual sets. User should have authorization to add/remove/edit from the collection by signup/login. <br><strong>Note</strong>: Loading time will be around 2-3 min because of the free web service feature of Render",
-        "Technologies Used": "JS, Tailwind, EJS, Express, Node.js, MongoDB",
+        "Description": "This project is a web application that allows users to browse and view a collection of Lego sets. Users can explore Lego sets by themes, view details of individual sets. User should have authorization to add/remove/edit from the collection by signup/login. <br><strong>Note</strong>: Loading time will be <strong>around 1-2 min</strong> because of the free web service feature of Render",
+        "Technologies Used": "JS, Tailwind, EJS, Express.js, Node.js, MongoDB",
         "gitlink": "https://github.com/shajigholam/Lego-Collection/tree/master",
         "livedemolink": "https://lego-collection-iyaa.onrender.com/",
         "image": "../assets/lego-2310286_640.jpg"
@@ -10,17 +10,17 @@
     {
         "Project Name": "Workout Tracker",
         "Description": "This is a full-stack MERN web application. Users can add/delete/create workouts to their own account. Using JWT to communicate the authentication status between the browser and the server. Also making hash passwords before saving them to the database ",
-        "Technologies Used": "React, Express, Node.js, MongoDB",
+        "Technologies Used": "React.js, Express.js, Node.js, MongoDB, JWT",
         "gitlink": "https://github.com/shajigholam/Workout-Buddy-MERN/tree/main",
         "image": "../assets/yoga.png"
     },
     {
-        "Project Name": "Real Estate Website",
-        "Description": "A website for a real estate agent with using thumbnail to show a breif description of each property. Includes contact form with validation and a confirmation alert.",
-        "Technologies Used": "JS, HTML and CSS",
-        "gitlink": "https://github.com/shajigholam/Real-Estate-Agent-Website",
-        "livedemolink": "https://real-estate-04a87c.netlify.app/",
-        "image": "../assets/house.jpg"
+        "Project Name": "Bulky Book",
+        "Description": "This is an e-commerce platform built with ASP.NET Core MVC and deployed on Azure. It allows administrators to manage orders, users, and products efficiently. The application also includes user authentication, role-based authorization, and integration with Stripe for payment processing. <br>The website is <strong>hosted on a free Azure service</strong>, which may occasionally cause availability issues. If the site doesn't load, please try again also let me know for the admin credentials so you can access all the features and functionalities😊",
+        "Technologies Used": "ASP.NET Core MVC, Entity Framework Core, ASP.NET Core Identity, Stripe API",
+        "gitlink": "https://github.com/shajigholam/Bulky",
+        "livedemolink": "https://bulkybook-samaneh.azurewebsites.net/",
+        "image": "../assets/bulkyBook.jpg"
     },
     {
         "Project Name": "My Portfolio",
@@ -40,8 +40,16 @@
     {
         "Project Name": "Clinic Appointment",
         "Description": "This project allows users to manage patient records and appointments through a text-based menu interface.",
-        "Technologies Used": "C",
+        "Technologies Used": "Objective C",
         "gitlink": "https://github.com/shajigholam/Clinic-Appointment",
         "image": "../assets/istockphoto-1.jpg"
+    },
+    {
+        "Project Name": "Real Estate Website",
+        "Description": "A website for a real estate agent with using thumbnail to show a breif description of each property. Includes contact form with validation and a confirmation alert.",
+        "Technologies Used": "JS, HTML and CSS",
+        "gitlink": "https://github.com/shajigholam/Real-Estate-Agent-Website",
+        "livedemolink": "https://real-estate-04a87c.netlify.app/",
+        "image": "../assets/house.jpg"
     }
 ]
